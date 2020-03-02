@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>统计结果</title>
+</head>
+<body>
+<h1>你输入的总字数为:{{total_count}}</h1>
+<a href="..">回到主页</a>
+<h2>下面是你的输入文字</h2>
+{{text}}
+<br>
+<h2>每个字的出现频率</h2>
+{% for k, v in word %}
+{{k}}--->{{v}}
+<br>
+{% endfor %}
+
+
+
+
+</body>
+</html>
